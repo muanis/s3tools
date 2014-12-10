@@ -19,7 +19,7 @@ if __name__ == "__main__":
     Grabs a signed url for a given bucket
     """
     parser = argparse.ArgumentParser(description="Upload and get signed urls for S3 buckets")
-    parser.add_argument("action", help="action name, can be either 'get_signed_url' or 'store' ")
+    #parser.add_argument("action", help="action name, can be either 'get_signed_url' or 'store' ")
 
     parser.add_argument("--timeout", default=300, type=int , help="seconds the url should be available")
     parser.add_argument("--bucket", type=str, help="bucket name")
